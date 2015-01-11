@@ -59,7 +59,7 @@
 
 <body unresolved>
 
- <core-header-panel>
+  <core-header-panel>
 
     <core-toolbar>
       <paper-tabs id="tabs" selected="all" self-end>
@@ -71,6 +71,14 @@
     <!-- main page content will go here -->
 
   </core-header-panel>
+
+  <script>
+  var tabs = document.querySelector('paper-tabs');
+
+    tabs.addEventListener('core-select', function() {
+          console.log("Selected: " + tabs.selected);
+            });
+  </script>
 
 </body>
 
